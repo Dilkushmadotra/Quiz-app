@@ -1,0 +1,130 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+  }
+  
+  h1 {
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+  }
+  
+  .question {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .question p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .option {
+    background: #f2f2f2;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .option:hover {
+    background-color: #e0f7fa;
+    transform: scale(1.02);
+  }
+  
+  .selected {
+    border: 2px solid #2196f3;
+    background-color: #e3f2fd;
+  }
+  
+  .correct {
+    background-color: #c8e6c9 !important;
+    border-color: #388e3c !important;
+    color: #2e7d32;
+    font-weight: bold;
+  }
+  
+  .wrong {
+    background-color: #ffcdd2 !important;
+    border-color: #d32f2f !important;
+    color: #c62828;
+    font-weight: bold;
+  }
+  
+  button {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #1565c0;
+    transform: translateY(-2px);
+  }
+  
+  button:disabled {
+    background-color: #90a4ae;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  }
+  
+  #add-question-form, #auth-section {
+    background: #ffffffcc;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    margin-bottom: 30px;
+    max-width: 700px;
+    width: 100%;
+  }
+  
+  #add-question-form input,
+  #auth-section input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+  }
+  
+  .option-inputs input {
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    .question {
+      padding: 15px;
+    }
+    .option {
+      font-size: 0.95rem;
+    }
+  }
+  
